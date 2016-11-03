@@ -33,7 +33,7 @@
                     </ul>
                     <a href=""><img src="image/header/vk.png" alt="vk"></a>
                     <div class="call">
-                        <button class="btn">
+                        <button class="btn" data-modal=".callback">
                             Заказать звонок
                         </button>
                         <a href="">Часто задаваемые вопросы</a>
@@ -229,7 +229,7 @@
                         <li><a href="">8 (903) 343-88-13</a></li>
                         <li><a href="">8 (843) 225-02-19</a></li>
                     </ul>
-                    <button class="btn">
+                    <button class="btn" data-modal=".callback">
                         Заказать звонок
                     </button>
                 </div>
@@ -246,12 +246,13 @@
         <div class="callback hidden">
             <div class="colse" data-btn-type="close"></div>
 
-            <form  data-form-name="modal-form">
-                <h3 class="heading"></h3>
-
-
-
-                <button class="btn white" data-form-name="modal-form"></button>
+            <form  data-form-name="modal-form" method="post" action="formManager.php">
+                <p class="title">
+                    Оставьте Ваш номер и мы свяжемся с Вами
+                </p>
+                <input type="text" class="input" name="name" placeholder=Имя" data-required="">
+                <input type="text" class="input" name="phone" placeholder="Телефон" data-required="">
+                <button class="btn" data-form-name="modal-form">Заказать звонок</button>
             </form>
         </div>
     </div>

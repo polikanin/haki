@@ -95,23 +95,6 @@ $('[name="name"]').on('keypress', function() {
 $('.phone').inputmask("+7(999)9999999");
 
 
-//// плавная прокрутка по странице
-var navList = $('.nav-link');
-var navigationPanel = $('.navigation');
-var scrollDuration = 600;
-
-navList.on('click', function(e){
-    $('.menu-btn').toggleClass('active');
-    var position = $(this).index();
-    e.preventDefault();
-    $('body, html').animate({
-        scrollTop: $('.anchor'+ position +'').offset().top
-    },scrollDuration);
-});
-
-
-
-
 
 //// скрипт закрывающий форму
 $('[data-btn-type="close"]').click(function(e){

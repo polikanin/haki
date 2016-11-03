@@ -1211,6 +1211,36 @@
     .modal .centered.hidden {
       opacity: 0;
       top: 10%; }
+  .modal .callback {
+    padding: 40px 20px;
+    position: absolute;
+    z-index: 10;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    background-color: rgba(117, 119, 98, 0.4);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center; }
+    .modal .callback .title {
+      color: #a0a947;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 35px; }
+    .modal .callback .input {
+      background-color: #ededed;
+      padding: 0 10px 0 21px;
+      color: black;
+      font-size: 14px;
+      font-weight: 300;
+      margin: 15px auto;
+      display: block;
+      width: 198px;
+      height: 44px;
+      border-radius: 5px; }
   .modal .colse {
     position: absolute;
     top: -40px;
