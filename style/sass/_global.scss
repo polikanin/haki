@@ -1,6 +1,10 @@
 body{
   padding: 0;
   margin: 0;
+  font-family: "Open Sans";
+  background-image: url("../image/bg.png");
+  background-position: center;
+  background-size: cover;
 }
 .wrapper{
   width: $width-lg;
@@ -43,6 +47,36 @@ input{
 
 button{
   cursor: pointer;
+}
+
+.btn{
+  width: 198px;
+  height: 44px;
+  background-color: #9b2e29;
+  border-radius: 1px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  @include transition();
+
+  &:hover{
+    background-color: #cc0f06;
+  }
+}
+
+.small{
+  width: 138px;
+  height: 47px;
+  background-color: #5e6049;
+  border-radius: 1px;
+  @include transition();
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: #74793f;
+  }
+
 }
 
 .col{

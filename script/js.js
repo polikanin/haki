@@ -34,6 +34,55 @@ $('form button').on('click',function(e){
     }
 });
 
+
+//// Слайдер-s2-min
+
+$('.slider-s2-min').slick({
+    slidesToShow: 4,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    vertical: true,
+    asNavFor: '.slider-s2',
+    focusOnSelect: true,
+    verticalSwiping: true
+});
+
+//// Слайдер-s2
+
+$('.slider-s2').slick({
+    slidesToShow: 1,
+    arrows: true,
+    dots: false,
+    slidesToScroll: 1,
+    asNavFor: '.slider-s2-min',
+    fade: true,
+    cssEase: 'linear'
+});
+
+//// Слайдер-s5
+
+$('.slider-s5').slick({
+    slidesToShow: 6,
+    arrows: false,
+    dots:true,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000
+});
+
+//// Слайдер-s6
+
+$('.slider-s6').slick({
+    slidesToShow: 6,
+    arrows: false,
+    dots:true,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000
+});
+
+
 //// Валидатор
 $('[name="name"]').on('keypress', function() {
     var that = this;
@@ -75,20 +124,6 @@ $('[data-modal]').on('click', function(){
     $($(this).data('modal')).removeClass('hidden')
 });
 
-//// Слайдер
-$('.s5 .slider').slick({
-    slidesToShow: 3,
-    arrows: false,
-    centerMode: true,
-    responsive: [
-        {
-            breakpoint: 680,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
-});
 
 //// Галерея на слайдере
 $('.zoom').fancybox();
